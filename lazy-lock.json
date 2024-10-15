@@ -6,5 +6,6 @@
   "mini.pick": { "branch": "main", "commit": "6d66ae9eb0b75261f1842788dda611285b6f065f" },
   "neogit": { "branch": "master", "commit": "eda716c44d3b5a424ea8604b10756c7fd8bed93a" },
   "plenary.nvim": { "branch": "master", "commit": "2d9b06177a975543726ce5c73fca176cedbffe9d" },
-  "telescope.nvim": { "branch": "master", "commit": "df534c3042572fb958586facd02841e10186707c" }
+  "telescope.nvim": { "branch": "master", "commit": "df534c3042572fb958586facd02841e10186707c" },
+  "tokyonight.nvim": { "branch": "main", "commit": "2c85fad417170d4572ead7bf9fdd706057bd73d7" }
 }
