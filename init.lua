@@ -3,3 +3,4 @@ vim.opt.relativenumber = true
 vim.opt.termguicolors = true
 
 require("config.lazy")
+require("plugins")
