@@ -1,6 +1,3 @@
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.termguicolors = true
-
-require("config.lazy")
-require("plugins")
+require("core")
+require("configs.lazy")
+require("configs.plugins")
