@@ -33,7 +33,7 @@ require("lazy").setup({
 			end,
 		},
 
-		{
+		{ -- NeoGit
 			"NeogitOrg/neogit",
 			dependencies = {
 				"nvim-lua/plenary.nvim", -- required
@@ -44,11 +44,20 @@ require("lazy").setup({
 			},
 		},
 
-		{
+		{ -- GitSigns
 			"lewis6991/gitsigns.nvim",
 		},
 
-		{},
+		{ -- NeoTree
+			"nvim-neo-tree/neo-tree.nvim",
+			branch = "v3.x",
+			dependencies = {
+				"nvim-lua/plenary.nvim",
+				"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+				"MunifTanjim/nui.nvim",
+				-- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
+			},
+		},
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.
