@@ -4,6 +4,8 @@ local g = vim.g
 g.mapleader = " "
 g.maplocalleader = " "
 g.have_nerd_font = true
+g.loaded_netrwPlugin = 1
+g.loaded_netrw = 1
 
 opt.mouse = "a"
 opt.number = true
