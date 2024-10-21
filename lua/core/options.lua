@@ -26,6 +26,10 @@ opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 opt.inccommand = "split"
 opt.cursorline = true
 opt.scrolloff = 10
+opt.expandtab = true
+opt.smartindent = true
+opt.tabstop = 2
+opt.shiftwidth = 2
 
 vim.api.nvim_create_autocmd("TextYankPost", {
 	desc = "Highlight when yanking (copying) text",
