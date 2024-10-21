@@ -58,6 +58,13 @@ require("lazy").setup({
 				-- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
 			},
 		},
+
+		{ -- Mason, Mason LSP Config and Neovim LSP Config
+			"williamboman/mason.nvim",
+			"williamboman/mason-lspconfig.nvim",
+			"neovim/nvim-lspconfig"
+		}
+
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.
