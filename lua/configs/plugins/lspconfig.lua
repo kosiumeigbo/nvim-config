@@ -33,16 +33,16 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
 		-- vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
 		--	callback = function()
-			--	vim.lsp.buf.hover()
-			--end,
---		})
+		--	vim.lsp.buf.hover()
+		--end,
+		--		})
 	end,
 })
 
 vim.api.nvim_create_autocmd("LspDetach", {
 	callback = function(event)
-    vim.api.nvim_clear_autocmds({buffer = args.buf})
-  end
+		vim.api.nvim_clear_autocmds({ buffer = args.buf })
+	end,
 })
 
 lspconfig.ts_ls.setup({})
