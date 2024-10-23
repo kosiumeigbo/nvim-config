@@ -1,5 +1,5 @@
 require("neo-tree").setup({
-	close_if_last_window = false, -- Close Neo-tree if it is the last window left in the tab
+	close_if_last_window = true, -- Close Neo-tree if it is the last window left in the tab
 	popup_border_style = "rounded",
 	enable_git_status = true,
 	enable_diagnostics = true,
@@ -57,16 +57,16 @@ require("neo-tree").setup({
 		},
 		name = {
 			trailing_slash = false,
-			use_git_status_colors = true,
+			use_git_status_colors = false,
 			highlight = "NeoTreeFileName",
 		},
 		git_status = {
 			symbols = {
 				-- Change type
-				added = "", -- or "✚", but this is redundant info if you use git_status_colors on the name
-				modified = "", -- or "", but this is redundant info if you use git_status_colors on the name
-				deleted = "✖", -- this can only be used in the git_status source
-				renamed = "󰁕", -- this can only be used in the git_status source
+				added = "A", -- or "✚", but this is redundant info if you use git_status_colors on the name
+				modified = "M", -- or "", but this is redundant info if you use git_status_colors on the name
+				deleted = "D", -- this can only be used in the git_status source
+				renamed = "R", -- this can only be used in the git_status source
 				-- Status type
 				untracked = "",
 				ignored = "",
@@ -165,8 +165,8 @@ require("neo-tree").setup({
 	filesystem = {
 		filtered_items = {
 			visible = false, -- when true, they will just be displayed differently than normal items
-			hide_dotfiles = true,
-			hide_gitignored = true,
+			hide_dotfiles = false,
+			hide_gitignored = false,
 			hide_hidden = true, -- only works on Windows for hidden files/directories
 			hide_by_name = {
 				--"node_modules"
