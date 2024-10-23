@@ -60,8 +60,11 @@ require("lazy").setup({
 			"williamboman/mason.nvim",
 			"williamboman/mason-lspconfig.nvim",
 			"neovim/nvim-lspconfig"
-		}
+		},
 
+    { -- Neoformat
+      "sbdchd/neoformat"
+    }
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.
