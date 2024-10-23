@@ -27,10 +27,7 @@ require("lazy").setup({
 		-- import your plugins
 
 		{ -- Tokyonight Theme
-			"folke/tokyonight.nvim",
-			config = function()
-				vim.cmd([[colorscheme tokyonight-night]])
-			end,
+			"folke/tokyonight.nvim"
 		},
 
 		{ -- NeoGit
