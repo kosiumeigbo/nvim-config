@@ -9,7 +9,6 @@ g.loaded_netrw = 1
 
 opt.mouse = "a"
 opt.number = true
-opt.relativenumber = true
 opt.termguicolors = true
 opt.showmode = false
 opt.breakindent = true
