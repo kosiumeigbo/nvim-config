@@ -62,8 +62,6 @@ require("lazy").setup({
 			"neovim/nvim-lspconfig"
 		},
 
-    { -- Neoformat
-      "sbdchd/neoformat"
     { -- Conform formatter
       "stevearc/conform.nvim",
     }
