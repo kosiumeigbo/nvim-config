@@ -64,6 +64,8 @@ require("lazy").setup({
 
     { -- Neoformat
       "sbdchd/neoformat"
+    { -- Conform formatter
+      "stevearc/conform.nvim",
     }
 	},
 	-- Configure any other settings here. See the documentation for more details.
