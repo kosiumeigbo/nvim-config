@@ -2,7 +2,7 @@ require("conform").setup({
   formatters_by_ft = {
     lua = { "stylua" },
 
-    javascript = {  "prettier"  },
+    javascript = { "prettier" },
     typescript = { "prettier" },
     javascriptreact = { "prettier" },
     typescriptreact = { "prettier" },
@@ -14,7 +14,7 @@ require("conform").setup({
   },
 })
 
-vim.api.nvim_create_autocmd({"BufWritePre", "TextChanged", "InsertLeave"}, {
+vim.api.nvim_create_autocmd({ "BufWritePre", "TextChanged", "InsertLeave" }, {
   pattern = "*",
   callback = function(args)
     require("conform").format({ bufnr = args.buf })
