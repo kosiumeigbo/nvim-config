@@ -40,3 +40,24 @@ vim.api.nvim_create_autocmd("LspDetach", {
 })
 
 lspconfig.ts_ls.setup({})
+
+lspconfig.tailwindcss.setup({
+  settings = {
+    tailwindCSS = {
+      experimental = {
+        classRegex = {
+          { "cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]" },
+          { "cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)" },
+        },
+      },
+    },
+  },
+})
+
+lspconfig.html.setup({})
+
+lspconfig.jsonls.setup({})
+
+lspconfig.lua_ls.setup({})
+
+lspconfig.yamlls.setup({})
