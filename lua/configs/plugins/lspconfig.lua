@@ -30,12 +30,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
     vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
     vim.keymap.set("n", "rs", vim.lsp.buf.rename, opts)
     vim.keymap.set("n", "gt", onGoToTypeDefinition, opts)
-
-    -- vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
-    --	callback = function()
-    --	vim.lsp.buf.hover()
-    --end,
-    --		})
   end,
 })
 
