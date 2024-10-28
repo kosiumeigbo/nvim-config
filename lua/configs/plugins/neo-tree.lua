@@ -282,4 +282,12 @@ require("neo-tree").setup({
   },
 })
 
-vim.api.nvim_create_autocmd({ "TabEnter", "TabNewEntered", "VimEnter" }, { command = "Neotree" })
+vim.api.nvim_create_autocmd({ "TabEnter", "TabNewEntered", "VimEnter" }, {
+  callback = function(opts)
+    vim.cmd([[Neotree]])
+
+    if opts.event ~= "VimEnter" then
+      vim.cmd([[wincmd l]])
+    end
+  end,
+})
