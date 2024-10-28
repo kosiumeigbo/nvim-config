@@ -70,6 +70,12 @@ require("lazy").setup({
       "nvim-lualine/lualine.nvim",
       dependencies = { "nvim-tree/nvim-web-devicons" },
     },
+
+    { -- Bufferline
+      "akinsho/bufferline.nvim",
+      version = "*",
+      dependencies = "nvim-tree/nvim-web-devicons",
+    },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
