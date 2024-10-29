@@ -39,6 +39,19 @@ vim.api.nvim_create_autocmd("LspDetach", {
   end,
 })
 
+vim.diagnostic.config({
+  signs = {
+    text = {
+      [vim.diagnostic.severity.ERROR] = "",
+      [vim.diagnostic.severity.WARN] = "",
+      [vim.diagnostic.severity.HINT] = "",
+      [vim.diagnostic.severity.INFO] = "",
+    },
+  },
+  update_in_insert = true,
+  severity_sort = true,
+})
+
 lspconfig.ts_ls.setup({})
 
 lspconfig.tailwindcss.setup({
