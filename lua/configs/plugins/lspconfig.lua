@@ -35,7 +35,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
 vim.api.nvim_create_autocmd("LspDetach", {
   callback = function(event)
-    vim.api.nvim_clear_autocmds({ buffer = args.buf })
+    vim.api.nvim_clear_autocmds({ buffer = event.buf })
   end,
 })
 
