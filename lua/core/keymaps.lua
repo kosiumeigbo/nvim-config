@@ -5,8 +5,8 @@ vim.keymap.set("n", "<C-j>", "<C-w><Down>", { desc = "Move focus to window [B]el
 vim.keymap.set("n", "<C-k>", "<C-w><Up>", { desc = "Move focus to window [A]bove" })
 
 -- Window creation
-vim.keymap.set("n", "wr", "<cmd>vsplit<CR>", { desc = "Split [W]indow [R]ight" })
-vim.keymap.set("n", "wb", "<cmd>split<CR>", { desc = "Split [W]indow [B]elow" })
+-- vim.keymap.set("n", "wl", "<cmd>vsplit<CR>", { desc = "Split [W]indow [R]ight" })
+-- vim.keymap.set("n", "wj", "<cmd>split<CR>", { desc = "Split [W]indow [B]elow" })
 
 -- Tab functions (DOES NOT WORK IN A NEOTREE WINDOW)
 vim.keymap.set("n", "ts", "<cmd>tab<Space>split<CR>", { desc = "[S]plit current buffer in a new tabpage" })
