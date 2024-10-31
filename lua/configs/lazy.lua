@@ -81,6 +81,10 @@ require("lazy").setup({
       "nvim-treesitter/nvim-treesitter",
       build = ":TSUpdate",
     },
+
+    { -- Indent Blankline
+      "lukas-reineke/indent-blankline.nvim",
+    },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
