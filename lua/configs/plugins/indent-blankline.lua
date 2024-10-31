@@ -29,8 +29,14 @@ require("ibl").setup({
     show_start = false,
     show_end = false,
     highlight = highlight,
-    include = {
-      node_type = { ["*"] = { "*" } },
+    include = { node_type = { ["*"] = { "*" } } },
+    exclude = {
+      node_type = {
+        javascript = { "program" },
+        typescript = { "program" },
+        tsx = { "program" },
+        lua = { "program" },
+      },
     },
   },
 })
