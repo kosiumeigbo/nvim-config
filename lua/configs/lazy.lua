@@ -76,6 +76,11 @@ require("lazy").setup({
       version = "*",
       dependencies = "nvim-tree/nvim-web-devicons",
     },
+
+    { -- Tree-sitter
+      "nvim-treesitter/nvim-treesitter",
+      build = ":TSUpdate",
+    },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
