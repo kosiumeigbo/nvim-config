@@ -3,7 +3,7 @@ require("mason").setup({})
 
 -- Mason LSP Config
 require("mason-lspconfig").setup({
-  ensure_installed = { "ts_ls", "tailwindcss", "html", "jsonls", "lua_ls", "harper_ls", "yamlls" },
+  ensure_installed = { "ts_ls", "tailwindcss", "html", "jsonls", "lua_ls", "harper_ls", "yamlls", "eslint" },
 })
 
 -- Neovim LSP Config
@@ -74,3 +74,5 @@ lspconfig.jsonls.setup({})
 lspconfig.lua_ls.setup({})
 
 lspconfig.yamlls.setup({})
+
+lspconfig.eslint.setup({})
