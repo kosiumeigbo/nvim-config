@@ -89,6 +89,14 @@ require("lazy").setup({
     { -- Comment
       "numToStr/Comment.nvim",
     },
+
+    { -- Auto-completion
+      "neovim/nvim-lspconfig", -- Collection of configurations for built-in LSP client
+      "hrsh7th/nvim-cmp", -- Autocompletion plugin
+      "hrsh7th/cmp-nvim-lsp", -- LSP source for nvim-cmp
+      "saadparwaiz1/cmp_luasnip", -- Snippets source for nvim-cmp
+      "L3MON4D3/LuaSnip", -- Snippets plugin
+    },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
