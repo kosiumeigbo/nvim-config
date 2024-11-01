@@ -97,6 +97,12 @@ require("lazy").setup({
       "saadparwaiz1/cmp_luasnip", -- Snippets source for nvim-cmp
       "L3MON4D3/LuaSnip", -- Snippets plugin
     },
+
+    { -- Auto-pairs
+      "windwp/nvim-autopairs",
+      event = "InsertEnter",
+      config = true,
+    },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
