@@ -1,6 +1,12 @@
 -- Mason default Config
 require("mason").setup({})
 
+vim.api.nvim_create_autocmd({ "VimEnter" }, {
+  callback = function()
+    vim.cmd([[Mason]])
+  end,
+})
+
 -- Mason LSP Config
 require("mason-lspconfig").setup({
   ensure_installed = { "ts_ls", "tailwindcss", "html", "jsonls", "lua_ls", "harper_ls", "yamlls", "eslint" },
