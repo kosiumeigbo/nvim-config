@@ -291,3 +291,11 @@ vim.api.nvim_create_autocmd({ "TabNewEntered", "VimEnter" }, {
     end
   end,
 })
+
+vim.keymap.set("n", "nto", function()
+  vim.cmd("Neotree")
+end)
+
+vim.keymap.set("n", "ntc", function()
+  vim.cmd("Neotree close")
+end)
