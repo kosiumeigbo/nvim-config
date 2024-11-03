@@ -30,6 +30,7 @@ opt.smartindent = true
 opt.tabstop = 2
 opt.shiftwidth = 2
 opt.showtabline = 2
+opt.wrap = false
 
 vim.api.nvim_create_autocmd("TextYankPost", {
   desc = "Highlight when yanking (copying) text",
