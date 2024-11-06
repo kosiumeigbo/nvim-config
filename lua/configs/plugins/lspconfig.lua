@@ -9,7 +9,7 @@ vim.api.nvim_create_autocmd({ "VimEnter" }, {
 
 -- Mason LSP Config
 require("mason-lspconfig").setup({
-  ensure_installed = { "ts_ls", "tailwindcss", "html", "jsonls", "lua_ls", "harper_ls", "yamlls", "eslint" },
+  ensure_installed = { "ts_ls", "tailwindcss", "html", "jsonls", "lua_ls", "harper_ls", "yamlls", "eslint", "emmet_ls" },
 })
 
 -- Capabilities to attach to individual LSP setups
@@ -18,6 +18,7 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 -- Luasnip setup
 local luasnip = require("luasnip")
+require("luasnip.loaders.from_vscode").lazy_load()
 
 -- nvim-cmp setup
 local cmp = require("cmp")
@@ -133,3 +134,5 @@ lspconfig.lua_ls.setup({ capabilities = capabilities })
 lspconfig.yamlls.setup({ capabilities = capabilities })
 
 lspconfig.eslint.setup({ capabilities = capabilities })
+
+lspconfig.emmet_ls.setup({ capabilities = capabilities })
