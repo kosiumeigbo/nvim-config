@@ -28,6 +28,13 @@ require("lazy").setup({
 
     { -- Tokyonight Theme
       "folke/tokyonight.nvim",
+      enabled = false,
+    },
+
+    { -- Eva Theme
+      "sharpchen/Eva-Theme.nvim",
+      lazy = false,
+      enabled = true
     },
 
     { -- NeoGit
