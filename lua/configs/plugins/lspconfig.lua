@@ -120,6 +120,7 @@ lspconfig.tailwindcss.setup({
           { "cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)" },
         },
       },
+      classAttributes = { "class", "className", "class:list", "classList", "ngClass", "classNameDiv", "classNameInput" },
     },
   },
   capabilities = capabilities,
